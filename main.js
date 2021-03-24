@@ -9,7 +9,13 @@ el: '#root',
      'https://lisbonlisboaportugal.com/images/400alfamabaixa/cathedral-tram-lisbon.jpg'
    ]
  },
+ created() {
+   setInterval(() => {
+     this.show_next();
+   }, 3000);
+ },
   methods: {
+
     show_next: function () {
       if (this.index < this.imagesArray.length - 1) {
        this.index++;

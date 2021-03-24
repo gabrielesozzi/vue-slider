@@ -20,10 +20,10 @@
        </div>
        <div class="circles">
          <i
-           v-for="circle_selected in imagesArray"
+           v-for="circle_selected in imagesArray.length"
            class="fas fa-circle"
            :class=" (circle_selected - 1 == index) ? 'selected' : '' "
-           @click="selection (circle_selected - 1)" 
+           @click="selection (circle_selected - 1)"
          ></i>
        </div>
      </div>
